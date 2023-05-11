@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLKSWAGEN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/autozone-png-logo/autozone-liberty-bowl-png-logo-0.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+    .card-img-top {
+    max-height: 250px;
+    overflow: hidden;
+}
+    .card-title a:link {
+    font-size: 30px;
+    background-color: transparent;
+    color: #000000;
+    text-decoration: none;
+}
+    .card-title a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+    #loader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+    </style>
+</head>
+<body>
+    <!--Pantalla de Cargando-->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Cargando...</span>
+        </div>
+      </div>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a href="index.html"><img style="width: 120px;" src="https://www.freepnglogos.com/uploads/autozone-png-logo/autozone-liberty-bowl-png-logo-0.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="toyota.html">Toyota</a></li>
+                  <li><a class="dropdown-item" href="honda.html">Honda</a></li>
+                  <li><a class="dropdown-item" href="volkswagen.html">Volkswagen</a></li>
+                  <li><a class="dropdown-item" href="chevrolet.html">Chevrolet</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="categorias.html">Todos Nuestros Autos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success me-2" type="submit">Buscar</button>
+              <button class="btn btn-primary"><i class="bi bi-person"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--Filtro de paginación-->
+      <aside>
+
+      </aside>
+    <!--Body categorias-->
+    <section class="bg-light py-4 my-5">
+      <div class="productos">
+      <div class="container">
+          <div class="row">
+              <div class="col-12"></div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+            
+                    <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1099775319021461634/3E.png" class="card-image-top" alt="thumbnail">
+            
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLSKWAGEN VENTO GLI</a></h3>
+                        <p class="card-text">Aunque el Vento GLI no tiene la fama del Golf GTI, ha logrado colocarse como un sedán de culto, del que muchos otros modelos de la competencia se han inspirado para también tener un cuatro puertas deportivo.</p>
+                        <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card my-3">
+            
+                  <img src="https://www.km77.com/images/medium/0/6/0/1/volkswagen-scirocco-frontal-lateral.320601.jpg" class="card-image-top" alt="thumbnail">
+            
+                  <div class="card-body">
+                      <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLKSWAGEN SCIROCCO</a></h3>
+                      <p class="card-text">El Scirocco es el único coche de su tamaño y precio que además de ofrecer un auténtico vendaval de prestaciones y un comportamiento excelente en carretera, despierta la admiración de propios y extraños. Su marcado carácter queda reflejado en su mirada pero ¡cuidado! su agresividad es contagiosa.</p>
+                      <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card my-3">
+            
+                  <img src="https://soymotor.com/sites/default/files/imagenes/noticia/volkswagen-golf-gti-clubsport-45-principal-soymotor.jpg" class="card-image-top" alt="thumbnail">
+            
+                  <div class="card-body">
+                      <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLKSWAGEN GOLF GTI</a></h3>
+                      <p class="card-text">El Volkswagen Golf GTI 2021 es una de las variantes deportivas del compacto alemán. Tiene 245 caballos de potencia en su versión convencional, pero el GTI Clubsport y el recién presentado GTI Clubsport 45 –éste último un tributo a los 45 años del modelo– acreditan 300 caballos.</p>
+                      <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card my-3">
+            
+                  <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1099777429758812180/3E.png" class="card-image-top" alt="thumbnail">
+            
+                  <div class="card-body">
+                      <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLKSWAGEN TAOS</a></h3>
+                      <p class="card-text">Es una actualización de la SUV de Volkswagen para el Segmento C (compacto). Reemplaza a la Taos que se comercializó desde mayo de 2021 (leer crítica). Se produce en la planta bonaerense de Pacheco y ya está a la venta en nuestro mercado.</p>
+                      <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card my-3">
+            
+                  <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1099777430895468544/3E.png" class="card-image-top" alt="thumbnail">
+            
+                  <div class="card-body">
+                      <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLSKWAGEN NIVUS</a></h3>
+                      <p class="card-text">El VW Nivus forma parte de la ofensiva de SUVs que la marca está realizando a nivel global, por eso se engloba dentro de este rubro, aunque sea más un crossover o CUV. ¿La razón? Comparte plataforma MQB A0 con Polo y T-Cross, pero es principalmente el primero con más altura y baúl incrementado en su capacidad.</p>
+                      <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card my-3">
+            
+                  <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1099777433789530182/3E.png" class="card-image-top" alt="thumbnail">
+            
+                  <div class="card-body">
+                      <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLKSWAGEN TIGUAN</a></h3>
+                      <p class="card-text">Volkswagen continúa su apuesta a los SUV y acaba de presentar en Europa y Estados Unidos el rediseño para Tiguan Allspace, la versión “larga” de la conocida camioneta mediana. Se trata de la renovación que adoptó la variante convencional el año pasado, que todavía no había llegado a la carrocería más grande.</p>
+                      <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                  </div>
+                  
+              </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+              
+                    <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1099778572018778142/saveiro-camioneta-volkswagen-exterior.png" class="card-image-top" alt="thumbnail">
+              
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLKSWAGEN SAVEIRO</a></h3>
+                        <p class="card-text">La pick-up chica de Volkswagen ya tiene años en el ruedo y además de su eterna roval, la FIAT Strada, suma nuevos competidores "por arriba" como la Renault Duster Oroch. Se destaca la oferta que cubre cabina simple, extendida y variante aventurera.</p>
+                        <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                    </div>
+                    
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card my-3">
+                
+                      <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1100503353022226512/ayZwaWQ9QXBp.png" class="card-image-top" alt="thumbnail">
+                
+                      <div class="card-body">
+                          <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLKSWAGEN AMAROK</a></h3>
+                          <p class="card-text">Volkswagen llegó última al terreno de las pick-ups medianas y le costó entrar, pero hoy se mantiene como una de las preferidas del mercado argentino. Se destaca su andar, el más similar a un SUV dentro de las camionetas y la llegada de la versión V6, única en su segmento que en 2020 recibe un upgrade de potencia que le permite entregar 258 caballos.</p>
+                          <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                      </div>
+                      
+                  </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+                  
+                        <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1100503353714286733/SyZwaWQ9QXBp.png" class="card-image-top" alt="thumbnail">
+                  
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">VOLKSWAGEN ATLAS</a></h3>
+                            <p class="card-text">El vehículo se caracteriza por contar con una imagen frontal exclusiva y alejada del Atlas, además de una carrocería con doble cabina, puertas traseras con peculiar diseño y ubicación para la manija y sector posterior con ópticas principales verticales y luces horizontales que recorren toda la puerta de la caja de carga.</p>
+                            <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+            </section>
+              <!--Footer-->
+              <footer class="text-center text-lg-start bg-light text-muted">
+                  <!-- Seccion: Redes -->
+                  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    <!-- Izqueirda -->
+                    <div class="me-5 d-none d-lg-block">
+                      <span>Conecta con nuestras Redes Sociales:</span>
+                    </div>
+                    <!-- Derecha -->
+                    <div>
+                      <a href="error404.html" class="me-5 text-reset">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a href="error404.html" class="me-5 text-reset">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a href="error404.html" class="me-5 text-reset">
+                        <i class="bi bi-google"></i>
+                      </a>
+                      <a href="error404.html" class="me-5 text-reset">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a href="error404.html" class="me-5 text-reset">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a href="error404.html" class="me-5 text-reset">
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                  </section>
+                  <!-- Seccion: Links  -->
+                  <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                      <!-- Grid row -->
+                      <div class="row mt-3">
+                        <!-- Grid columna -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                          <!-- Contenenido -->
+                          <h6 class="text-uppercase fw-bold mb-4">AutoZone Online</h6>
+                          <p>
+                            En esta pagina podran encontrar los autos mas vendidos del mercado con las mejores tasaciones del pais.
+                          </p>
+                        </div>
+                        <!-- Grid columna -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold mb-4">
+                            Todos Nuestros Autos
+                          </h6>
+                          <p>
+                            <a href="toyota.html" class="text-reset">Toyota</a>
+                          </p>
+                          <p>
+                            <a href="honda.html" class="text-reset">Honda</a>
+                          </p>
+                          <p>
+                            <a href="volkswagen.html" class="text-reset">Volkswagen</a>
+                          </p>
+                          <p>
+                            <a href="chevrolet.html" class="text-reset">Chevrolet</a>
+                          </p>
+                        </div>
+                        <!-- Grid columna -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold mb-4">
+                            Links Importantes
+                          </h6>
+                          <p>
+                            <a href="quienessomos.html" class="text-reset">¿Quienes Somos?</a>
+                          </p>
+                          <p>
+                            <a href="error404.html" class="text-reset">Tasaciones</a>
+                          </p>
+                          <p>
+                            <a href="contacto.html" class="text-reset">Contacto</a>
+                          </p>
+                        </div>
+                        <!-- Grid columna -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                          <p><i class="fas fa-home me-3"></i>Mercedes,Buenos Aires,Argentina</p>
+                          <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            Autozoneonline@gmail.com
+                          </p>
+                          <p><i class="fas fa-phone me-3"></i> +54 (2324) 691951 (Valentin)</p>
+                          <p><i class="fas fa-phone me-3"></i> +54 (2324) 683827 (Osvaldo)</p>
+                          <p><i class="fas fa-phone me-3"></i> +54 (2324) 518261 (Manuel)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Copyright -->
+                  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                    <p>
+                    <i class="bi bi-c-circle-fill"></i>
+                    2023 Copyright: ElgrupoX
+                    </p>
+                  </div>
+              </footer>
+          
+          
+          
+              <script>
+                  window.addEventListener("load", function() {
+              const loader = document.getElementById("loader");
+              loader.style.display = "none";
+              });
+              </script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

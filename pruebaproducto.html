@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoZone Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/autozone-png-logo/autozone-liberty-bowl-png-logo-0.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+      #loader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #bodyproducto {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+header img {
+  max-height: 200px;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header p {
+  font-size: 24px;
+  margin: 0;
+}
+section {
+  padding: 20px;
+}
+section p{
+  display: flex;
+  text-align: center;
+}
+section h2 {
+  font-size: 24px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#button_carrito {
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #cc5500;
+}
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <!--Pantalla de Cargando-->
+    <div id="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Cargando...</span>
+      </div>
+    </div>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a href="index.html"><img style="width: 120px;" src="https://www.freepnglogos.com/uploads/autozone-png-logo/autozone-liberty-bowl-png-logo-0.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="toyota.html">Toyota</a></li>
+                  <li><a class="dropdown-item" href="honda.html">Honda</a></li>
+                  <li><a class="dropdown-item" href="volkswagen.html">Volkswagen</a></li>
+                  <li><a class="dropdown-item" href="chevrolet.html">Chevrolet</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="categorias.html">Todos Nuestros Autos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success me-2" type="submit">Buscar</button>
+              <button class="btn btn-primary"><i class="bi bi-person"></i></button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!--Body del producto-->
+    <div id="bodyproducto">
+        <header>
+            <img src="https://alianzaautomotriz.com/wp-content/uploads/2022/06/2023_GR-86_SpecialEdition_SolarShift_002-scaled-1-770x431.jpg" alt="ToyotaGR86">
+            <h1>TOYOTA GR86</h1>
+        </header>
+        <section>
+            <h2>Características del Toyota GR 86</h2>
+            <p>El Toyota GR86 está específicamente diseñado para transmitir deportividad desde el primer vistazo. Así, su imagen resulta mucho más espectacular que la de su antecesor, con soluciones como la rejilla MATRIX específica que preside su frontal, paragolpes abultados, taloneras prominentes y una zaga en la que la aerodinámica también es protagonista, tanto en lo referente al alerón, como al difusor de aire inferior. Con todo y eso, las dimensiones son muy similares a las de su antecesor. Mide 4,27 metros de largo, 1,78 de ancho y 1,31 de alto, de modo que solo ha crecido 2,5 centímetros a lo largo, es igual de ancho y ha perdido un centímetro de altura. A nivel de chasis, la batalla es de 2,575 metros, cinco milímetros más amplia y el ancho de vías posterior ha ganado otros 2 centímetros. A pesar de todo este nuevo diseño le sienta realmente bien, mostrándose más notablemente más moderno que su antecesor y más ancho y bajo en vivo de lo que se aprecia en las fotos.</p>
+        </section>
+        <section>
+            <h2>Dimensiones del Toyota GR 86</h2>
+            <ul>
+              <li>Longitud: 4,27 metros</li>
+              <li>Anchura: 1,78 metros</li>
+              <li>Altura: 1,31 metros</li>
+              <li>Peso: 1.345 kilos</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Opciones de personalización</h2>
+            <ul>
+              <li>Toyota GR86 RZ manual - 32.900 euros</li>
+              <li>Toyota GR86 RZ manual + Touring Pack - 35.400 euros</li>
+              <li>Toyota GR86 RZ manual + Circuit Pack - 37.900 euros</li>
+            </ul>
+        </section>
+        <div id="button_carrito">
+          <button>Agregar al carrito</button>
+        </div>
+        <section>
+            <h2>Productos relacionados...</h2>
+            <div class="cuadricula">
+              <div class="producto">
+                <h3>TOYOTA GR YARIS</h3>
+                <a href="file:///C:/Users/CChiicho/Desktop/pagina/producto__toyotagryaris.html"><img src="https://scene7.toyota.eu/is/image/toyotaeurope/GR+YARIS+HERO_tcm-1014-2240363?qlt=80&wid=1280&fit=fit,1&ts=19475&resMode=sharp2&op_usm=1.75,0.3,2,0" alt="TOYOTA GR YARIS"></a>
+                <p>Precio: A consultar...</p>
+              </div>
+              <div class="cuadricula">
+                <div class="producto">
+                  <h3>TOYOTA GR YARIS</h3>
+                  <a href="file:///C:/Users/CChiicho/Desktop/pagina/producto__toyotagryaris.html"><img src="https://scene7.toyota.eu/is/image/toyotaeurope/GR+YARIS+HERO_tcm-1014-2240363?qlt=80&wid=1280&fit=fit,1&ts=19475&resMode=sharp2&op_usm=1.75,0.3,2,0" alt="TOYOTA GR YARIS"></a>
+                  <p>Precio: A consultar...</p>
+                </div>
+            </div>
+        </section>
+        </div>
+
+
+
+
+
+
+    <!--Footer-->
+    <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Seccion: Redes -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+              <!-- Izqueirda -->
+              <div class="me-5 d-none d-lg-block">
+                <span>Conecta con nuestras Redes Sociales:</span>
+              </div>
+              <!-- Derecha -->
+              <div>
+                <a href="error404.html" class="me-5 text-reset">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="error404.html" class="me-5 text-reset">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="error404.html" class="me-5 text-reset">
+                  <i class="bi bi-google"></i>
+                </a>
+                <a href="error404.html" class="me-5 text-reset">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="error404.html" class="me-5 text-reset">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="error404.html" class="me-5 text-reset">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </section>
+            <!-- Seccion: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid columna -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Contenenido -->
+                    <h6 class="text-uppercase fw-bold mb-4">AutoZone Online</h6>
+                    <p>
+                      En esta pagina podran encontrar los autos mas vendidos del mercado con las mejores tasaciones del pais.
+                    </p>
+                  </div>
+                  <!-- Grid columna -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Todos Nuestros Autos
+                    </h6>
+                    <p>
+                      <a href="toyota.html" class="text-reset">Toyota</a>
+                    </p>
+                    <p>
+                      <a href="honda.html" class="text-reset">Honda</a>
+                    </p>
+                    <p>
+                      <a href="volkswagen.html" class="text-reset">Volkswagen</a>
+                    </p>
+                    <p>
+                      <a href="chevrolet.html" class="text-reset">Chevrolet</a>
+                    </p>
+                  </div>
+                  <!-- Grid columna -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Links Importantes
+                    </h6>
+                    <p>
+                      <a href="quienessomos.html" class="text-reset">¿Quienes Somos?</a>
+                    </p>
+                    <p>
+                      <a href="error404.html" class="text-reset">Tasaciones</a>
+                    </p>
+                    <p>
+                      <a href="contacto.html" class="text-reset">Contacto</a>
+                    </p>
+                  </div>
+                  <!-- Grid columna -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                    <p><i class="fas fa-home me-3"></i>Mercedes,Buenos Aires,Argentina</p>
+                    <p>
+                      <i class="fas fa-envelope me-3"></i>
+                      Autozoneonline@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> +54 (2324) 691951 (Valentin)</p>
+                    <p><i class="fas fa-phone me-3"></i> +54 (2324) 683827 (Osvaldo)</p>
+                    <p><i class="fas fa-phone me-3"></i> +54 (2324) 518261 (Manuel)</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              <p>
+              <i class="bi bi-c-circle-fill"></i>
+              2023 Copyright: ElgrupoX
+              </p>
+            </div>
+    </footer>
+    
+    <script>
+          window.addEventListener("load", function() {
+          const loader = document.getElementById("loader");
+          loader.style.display = "none";
+          });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

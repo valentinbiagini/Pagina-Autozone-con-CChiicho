@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOYOTA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/autozone-png-logo/autozone-liberty-bowl-png-logo-0.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+    .card-img-top {
+    max-height: 250px;
+    overflow: hidden;
+    }
+    .card-title a:link {
+    font-size: 30px;
+    background-color: transparent;
+    color: #000000;
+    text-decoration: none;
+    }
+    .card-title a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    #loader {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head> 
+<body>
+        <!--Pantalla de Cargando-->
+        <div id="loader">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Cargando...</span>
+            </div>
+        </div>
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a href="index.html"><img style="width: 120px;" src="https://www.freepnglogos.com/uploads/autozone-png-logo/autozone-liberty-bowl-png-logo-0.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Menu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="toyota.html">Toyota</a></li>
+                            <li><a class="dropdown-item" href="honda.html">Honda</a></li>
+                            <li><a class="dropdown-item" href="volkswagen.html">Volkswagen</a></li>
+                            <li><a class="dropdown-item" href="chevrolet.html">Chevrolet</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                             <li><a class="dropdown-item" href="categorias.html">Todos Nuestros Autos</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="login.html">Log In</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-success me-2" type="submit">Buscar</button>
+                        <button class="btn btn-primary"><i class="bi bi-person"></i></button>
+                      </form>
+                </div>
+            </div>
+        </nav>
+        <!--Filtro de paginación-->
+          <aside>
+    
+          </aside>
+        <!--Body categorias-->
+        <section class="bg-light py-4 my-5">
+            <div class="productos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"></div>
+                      
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card my-3">
+      
+                            <img src="https://alianzaautomotriz.com/wp-content/uploads/2022/06/2023_GR-86_SpecialEdition_SolarShift_002-scaled-1-770x431.jpg" class="card-image-top" alt="thumbnail">
+      
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA GR86</a></h3>
+                                <p class="card-text">El GR86 de segunda generación, presentado para 2022, fue noticia con un salto significativo en potencia respecto al primero, junto con un diseño más conmovedor y un manejo más estricto, todo mientras mantiene el peso bajo y el precio asequible. </p>
+                                <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card my-3">
+    
+                            <img src="https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_0928b757daab4f8ab02a707003aac7aa.jpg" class="card-image-top" alt="thumbnail">
+    
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA GR YARIS</a></h3>
+                                <p class="card-text">El nuevo GR Yaris presenta componentes ultralivianos y de gran rendimiento. El Circuit Pack está diseñado para conductores que buscan lo último en respuesta y precisión de manejo. </p>
+                                <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+    
+                        <img src="https://hips.hearstapps.com/autoweek/assets/s3fs-public/2020_Supra_LaunchEdition_01_DA98A3EF24330A1E359D4DA496D4CF667DC03BAE.jpg" class="card-image-top" alt="thumbnail">
+    
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA GR SUPRA</a></h3>
+                            <p class="card-text">Mecánicamente, el Supra cuenta con un motor naftero de 6 cilindros en línea de 3.0 litros, que si bien es compartido con BMW, cuenta con una puesta a punto propia. Desarrolla 340 CV y 500 Nm de torque, asociado a una caja automática de 8 velocidades. </p>
+                            <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card my-3">
+    
+                        <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1098334350875050174/image.png" class="card-image-top" alt="thumbnail">
+    
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA HILUX</a></h3>
+                            <p class="card-text">Teniendo la dureza e indestructibilidad como bandera, la Toyota Hilux no es solo la pick-up más vendida en el país y también está entre los vehículos con más patentamientos. Esta última generación buscó sumar mayor refinamiento, ya sea en confort de marcha, insonorización y equipamiento, sin embargo sigue siendo la camioneta más elegida a la hora del trabajar. </p>
+                            <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+    
+                    <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1098337251353698325/image.png" class="card-image-top" alt="thumbnail">
+    
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA TUNDRA</a></h3>
+                        <p class="card-text">En Estados Unidos, la Toyota Tundra se convirtió en la preferida de muchos trabajadores de la construcción, ya que adoptaba diferentes soluciones funcionales que eran muy valoradas por esta clase de usuarios, que utilizaban la pick up para realizar tareas netamente laborales. </p>
+                        <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+    
+                    <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1098335770613387326/image.png" class="card-image-top" alt="thumbnail">
+    
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA TACOMA</a></h3>
+                        <p class="card-text">Se trata del Toyota Tacoma TRD Pro que se presenta renovada como el modelo más deportivo de la gama perfecto para los conductores más aventureros. </p>
+                        <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+      
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card my-3">
+      
+                            <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1098338288345038929/image.png" class="card-image-top" alt="thumbnail">
+      
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA COROLLA CROSS</a></h3>
+                                <p class="card-text">Es la nueva SUV de Toyota para el Segmento C (compacto). Se posiciona por debajo de la Rav4 Hybrid japonesa y comparte plataforma y mecánicas con el Corolla Sedán. Llega importada de Brasil, ya está a la venta en nuestro mercado</p>
+                                 <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+      
+                     <div class="col-md-6 col-lg-4">
+                        <div class="card my-3">
+      
+                            <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1098338798535975013/image.png" class="card-image-top" alt="thumbnail">
+                            <div class="card-body">
+                              <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA GR RAV-4</a></h3>
+                              <p class="card-text">El RAV4 se une a la gama de modelos GR Sport vendida en el Viejo Continente, y que incluye a variantes del Yaris , Yaris Cross, Corolla, C-HR y Hilux. En particular, el estilo deportivo del RAV4 GR Sport se basa en retoques sutiles y en una suspensión modificada, desarrollada por Toyota Gazoo Racing.</p>
+                              <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card my-3">
+                            <img src="https://cdn.discordapp.com/attachments/1092895250122551308/1098339002500776046/image.png" class="card-image-top" alt="thumbnail">
+                            <div class="card-body">
+                                <h3 class="card-title"><a href="pruebaproducto.html" class="text-secondary">TOYOTA 4RUNNER</a></h3>
+                                <p class="card-text">La Toyota 4Runner ha ayudado a conquistar terrenos off-road por más de 30 años gracias su comprobada carrocería montada en el chasis que brinda importantes mejoras en su desempeño.</p>
+                                <a href="pruebaproducto.html" class="btn btn-primary">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+                <footer class="text-center text-lg-start bg-light text-muted">
+                    <!-- Seccion: Redes -->
+                    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                      <!-- Izqueirda -->
+                        <div class="me-5 d-none d-lg-block">
+                            <span>Conecta con nuestras Redes Sociales:</span>
+                        </div>
+                      <!-- Derecha -->
+                        <div>
+                            <a href="error404.html" class="me-5 text-reset">
+                            <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="error404.html" class="me-5 text-reset">
+                            <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="error404.html" class="me-5 text-reset">
+                            <i class="bi bi-google"></i>
+                            </a>
+                            <a href="error404.html" class="me-5 text-reset">
+                            <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="error404.html" class="me-5 text-reset">
+                            <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="error404.html" class="me-5 text-reset">
+                            <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </section>
+                    <!-- Seccion: Links  -->
+                    <section class="">
+                        <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                          <!-- Grid columna -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Contenenido -->
+                                <h6 class="text-uppercase fw-bold mb-4">AutoZone Online</h6>
+                                <p>
+                                 En esta pagina podran encontrar los autos mas vendidos del mercado con las mejores tasaciones del pais.
+                                </p>
+                            </div>
+                          <!-- Grid columna -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                Todos Nuestros Autos
+                                </h6>
+                                <p>
+                                <a href="toyota.html" class="text-reset">Toyota</a>
+                                </p>
+                                <p>
+                                <a href="honda.html" class="text-reset">Honda</a>
+                                </p>
+                                <p>
+                                <a href="volkswagen.html" class="text-reset">Volkswagen</a>
+                                </p>
+                                <p>
+                                <a href="chevrolet.html" class="text-reset">Chevrolet</a>
+                                </p>
+                            </div>
+                          <!-- Grid columna -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                Links Importantes
+                                </h6>
+                                <p>
+                                <a href="quienessomos.html" class="text-reset">¿Quienes Somos?</a>
+                                </p>
+                                <p>
+                                <a href="error404.html" class="text-reset">Tasaciones</a>
+                                </p>
+                                <p>
+                                <a href="contacto.html" class="text-reset">Contacto</a>
+                                </p>
+                            </div>
+                          <!-- Grid columna -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                                <p><i class="fas fa-home me-3"></i>Mercedes,Buenos Aires,Argentina</p>
+                                <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                Autozoneonline@gmail.com
+                                </p>
+                                <p><i class="fas fa-phone me-3"></i> +54 (2324) 691951 (Valentin)</p>
+                                <p><i class="fas fa-phone me-3"></i> +54 (2324) 683827 (Osvaldo)</p>
+                                <p><i class="fas fa-phone me-3"></i> +54 (2324) 518261 (Manuel)</p>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <!-- Copyright -->
+                    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                      <p>
+                      <i class="bi bi-c-circle-fill"></i>
+                      2023 Copyright: ElgrupoX
+                      </p>
+                    </div>
+                </footer>
+            
+            
+            
+                <script>
+                    window.addEventListener("load", function() {
+                const loader = document.getElementById("loader");
+                loader.style.display = "none";
+                });
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+    </html>
